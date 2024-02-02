@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightblue;
+}
+
+.login-container {
+  background-image: url("./Assets/PC-Background.jpg");
+  background-size: cover;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-content {
+  background-color: transparent;
+  padding-bottom: 20px;
+  border: black 1px solid;
+  border-radius: 20px;
+  width: 350px;
+  padding: 1.5%;
+  align-items: center;
+  box-shadow: 7px -8px 18px 5px rgb(14, 10, 0);
+}
+
+.login-content h3 {
+  font: 2rem italic;
+  color: red;
+  margin: 5% 0;
+  margin-bottom: 10%;
+  text-shadow: 5px -3px 5px rgb(233, 175, 14);
+}
+.login-content h3:hover {
+  color: black;
+  text-shadow: none;
+}
+
+.login-form-input {
+  margin-top: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-form-input input {
+  align-items: center;
+  width: 80%;
+  height: 35px;
+  padding-left: 5px;
+  padding-right: 35px;
+  border: 0.1rem solid black;
+  border-radius: 5px;
+  outline: none;
+  background: transparent;
+}
+
+.login-form-input input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.login-form-input input[data-autocompleted] {
+  background-color: transparent !important;
+}
+
+.login-form-input input::placeholder {
+  opacity: 55%;
+}
+
+.checkmark {
+  margin-top: 5%;
+  justify-content: center;
+}
+#checkbox {
+  width: 40px;
+  margin-top: 23px;
+  margin-left: -118px;
+  position: absolute;
+  cursor: pointer;
+}
+.checkbox input[type="checkbox"] {
+  accent-color: red;
+}
+.remember-forget {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 23px;
+  margin-top: 21px;
+}
+.remember-me {
+  font-size: 0.7rem;
+}
+.forget-password {
+  font-size: 0.7rem;
+}
+
+.login-innerinput-icon {
+  margin-left: 210px;
+  margin-top: 3px;
+  position: absolute;
+}
+
+.login-errors-message {
+  margin-left: 13%;
+  text-align: left;
+  color: red;
+  font-size: 13px;
+  margin-bottom: -5.5%;
+}
+
+.invalid-error-message {
+  text-align: right;
+  margin-right: 36px;
+  color: red;
+  font-size: 13px;
+  margin-bottom: -5.5%;
+}
+
+.login-btn {
+  width: 50%;
+  height: 30px;
+  margin-top: 7%;
+  background-color: red;
+  color: aliceblue;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: black;
+  letter-spacing: 0.2rem;
+  transition: all 1s ease;
+}
+
+.new-account {
+  font-family: monospace;
+  font-size: small;
+  margin-top: 5%;
+}
+
+.to-signup {
+  color: red;
+  margin-left: 1%;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.to-signup:hover {
+  color: rgb(251, 255, 31);
+}
+
+@media (max-width: 768px) /*Tablet*/ {
+  .remember-forget,
+  .new-account {
+    color: white;
+  }
+  .login-content h3 {
+    color: yellow;
+    margin-bottom: 2px;
+    text-shadow: 5px -3px 5px rgb(0, 0, 0);
+  }
+  .login-content h3:hover {
+    color: red;
+    text-shadow: 5px -3px 5px rgb(255, 255, 255);
+  }
+  .login-innerinput-icon {
+    margin-left: 220px;
+  }
+  .login-errors-message {
+    margin-bottom: -5.2%;
+  }
+  .invalid-error-message {
+    margin-bottom: -5.2%;
+  }
+  .remember-forget {
+    margin-left: 18px;
+  }
+  #checkbox {
+    margin-left: -125px;
+  }
+}
+
+@media (max-width: 480px) /*Mobile*/ {
+  .login-content {
+    width: 300px;
+  }
+  .login-content h3 {
+    font: 1.3rem italic;
+  }
+  .login-form-input input {
+    height: 30px;
+    font-size: 12px;
+  }
+  .login-innerinput-icon {
+    margin-left: 190px;
+  }
+  .login-errors-message {
+    font-size: 11px;
+    margin-bottom: -5.3%;
+  }
+  .invalid-error-message {
+    font-size: 11px;
+    margin-bottom: -5.3%;
+  }
+  #checkbox {
+    margin-left: -97px;
+    margin-top: 4.3%;
+    width: 9px;
+  }
+  .remember-forget {
+    margin-left: 11px;
+  }
+  .remember-me {
+    font-size: 0.6rem;
+  }
+  .forget-password {
+    font-size: 0.6rem;
+  }
+  .login-btn {
+    width: 35%;
+    height: 25px;
+    border-radius: 7px;
+  }
+  .new-account {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 414px) /*Mobile*/ {
+  /* .login-container {
+    background-image: url("./Assets/Mobile-Background.jpg");
+    background-size: auto;
+  } */
+
+  .login-content {
+    width: 250px;
+  }
+  .login-content h3 {
+    font: 1.5rem italic;
+    color: red;
+    text-shadow: 5px -3px 5px rgb(233, 175, 14);
+  }
+  .login-content h3:hover {
+    color: yellow;
+    text-shadow: 5px -3px 5px rgb(0, 0, 0);
+  }
+  .login-form-input input {
+    height: 25px;
+    font-size: 11px;
+  }
+  .login-errors-message {
+    font-size: x-small;
+    margin-bottom: -5.9%;
+  }
+  .invalid-error-message {
+    font-size: x-small;
+    margin-bottom: -5.9%;
+  }
+  .login-innerinput-icon {
+    font-size: 12px;
+    margin-left: 160px;
+  }
+  #checkbox {
+    width: 8px;
+    margin-left: -87px;
+    margin-top: 3.5%;
+  }
+  .remember-forget {
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .remember-me {
+    font-size: 0.5rem;
+  }
+  .forget-password {
+    font-size: 0.5rem;
+    margin-left: 15px;
+  }
+
+  .login-btn {
+    width: 30%;
+    height: 20px;
+    border-radius: 5px;
+  }
+  .new-account {
+    font-size: x-small;
+  }
+}
+@media (max-width: 360px) {
+  .invalid-error-message {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 350px) {
+  #checkbox {
+    width: 7.5px;
+    margin-left: -85px;
+    margin-top: 4.1%;
+  }
+  .invalid-error-message {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 250px) {
+  .login-content {
+    width: 200px;
+  }
+  .login-content h3 {
+    font: 1.2rem italic;
+    margin-bottom: 5%;
+  }
+  .login-innerinput-icon {
+    font-size: 10px;
+    margin-left: 125px;
+  }
+  .login-errors-message {
+    margin-bottom: -5.8%;
+    font-size: 8px;
+  }
+  .invalid-error-message {
+    font-size: 8px;
+    margin-right: 25px;
+    margin-bottom: -5.8%;
+  }
+  #checkbox {
+    width: 7px;
+    margin-left: -67px;
+    margin-top: 5.5%;
+  }
+  .remember-forget {
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .remember-me {
+    font-size: 0.4rem;
+  }
+  .forget-password {
+    font-size: 0.4rem;
+    margin-left: 10px;
+  }
+  .new-account {
+    font-size: xx-small;
+  }
+}

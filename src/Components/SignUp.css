@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.signup-container {
+  background-image: url("./Assets/PC-Background.jpg");
+  background-size: cover;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-content {
+  background-color: transparent;
+  padding-bottom: 20px;
+  border: black 1px solid;
+  border-radius: 20px;
+  width: 350px;
+  padding: 1.5%;
+  align-items: center;
+  box-shadow: 7px -8px 18px 5px rgb(14, 10, 0);
+}
+
+.signup-content h3 {
+  font: 2rem italic;
+  color: red;
+  margin: 5% 0;
+  margin-bottom: 10.5%;
+  text-shadow: 5px -3px 5px rgb(233, 175, 14);
+}
+.signup-content h3:hover {
+  color: black;
+  text-shadow: none;
+}
+
+.signup-form-input {
+  display: flex;
+  margin-top: 7%;
+  align-items: center;
+  justify-content: center;
+}
+.signup-form-input input {
+  align-items: center;
+  width: 80%;
+  height: 35px;
+  padding-left: 5px;
+  padding-right: 35px;
+  border: 0.1rem solid black;
+  border-radius: 5px;
+  outline: none;
+  background: transparent;
+}
+
+.signup-form-input input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.signup-form-input input[data-autocompleted] {
+  background-color: transparent !important;
+}
+
+.signup-form-input input::placeholder {
+  opacity: 55%;
+}
+
+.signup-innerinput-icon {
+  margin-left: 210px;
+  margin-top: 3px;
+  position: absolute;
+}
+
+.signup-errors-message {
+  margin-left: 13%;
+  text-align: left;
+  color: red;
+  font-size: 13px;
+  margin-bottom: -5.5%;
+}
+.used-email-error-message {
+  text-align: right;
+  margin-right: 36px;
+  color: red;
+  font-size: 13px;
+  margin-bottom: -5.5%;
+}
+
+.signup-btn {
+  width: 50%;
+  height: 30px;
+  margin-top: 11%;
+  margin-bottom: 1px;
+  background-color: red;
+  color: aliceblue;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background-color: black;
+  letter-spacing: 0.2rem;
+  transition: all 1s ease;
+}
+
+.privacy-condition {
+  margin-top: 5%;
+}
+
+.terms-policy span {
+  color: gray;
+  cursor: pointer;
+}
+.terms-policy span:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.privacy-condition p {
+  font-size: 0.7rem;
+}
+
+.already-account {
+  margin-top: 5%;
+  font-family: monospace;
+  font-size: small;
+}
+
+.to-login {
+  color: red;
+  margin-left: 1%;
+  text-decoration: none;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.to-login:hover {
+  color: rgb(251, 255, 0);
+}
+
+@media (max-width: 768px) /*Tablet*/ {
+  .privacy-condition p,
+  .already-account {
+    color: white;
+  }
+  .signup-content h3 {
+    color: yellow;
+    text-shadow: 5px -3px 5px rgb(0, 0, 0);
+  }
+  .signup-content h3:hover {
+    color: red;
+    text-shadow: 5px -3px 5px rgb(255, 255, 255);
+  }
+  .signup-innerinput-icon {
+    margin-left: 220px;
+  }
+  .signup-errors-message {
+    margin-bottom: -5.25%;
+  }
+  .used-email-error-message {
+    margin-bottom: -5.25%;
+    margin-right: 40px;
+  }
+  .terms-policy span:hover {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-content {
+    width: 300px;
+  }
+  .signup-content h3 {
+    font: 1.4rem italic;
+  }
+  .signup-form-input input {
+    height: 30px;
+    font-size: 12px;
+  }
+  .signup-innerinput-icon {
+    margin-left: 190px;
+    font-size: 14px;
+  }
+  .signup-errors-message {
+    margin-bottom: -5.3%;
+    font-size: 11px;
+  }
+  .used-email-error-message {
+    margin-bottom: -5.3%;
+    font-size: 11px;
+  }
+  .signup-btn {
+    width: 35%;
+    height: 25px;
+    border-radius: 7px;
+  }
+  .privacy-condition p {
+    font-size: 10px;
+  }
+  .already-account {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 414px) /*Mobile*/ {
+  .signup-content {
+    width: 250px;
+  }
+  .signup-content h3 {
+    font: 1.5rem italic;
+    color: red;
+    text-shadow: 5px -3px 5px rgb(233, 175, 14);
+  }
+  .signup-content h3:hover {
+    color: yellow;
+    text-shadow: 5px -3px 5px rgb(0, 0, 0);
+  }
+  .signup-form-input input {
+    height: 25px;
+    font-size: 11px;
+  }
+  .signup-innerinput-icon {
+    font-size: 12px;
+    margin-left: 160px;
+  }
+  .signup-errors-message {
+    margin-bottom: -6%;
+    font-size: 10px;
+  }
+  .used-email-error-message {
+    margin-bottom: -6%;
+    font-size: 10px;
+    margin-right: 30px;
+  }
+  .signup-btn {
+    width: 35%;
+    height: 20px;
+    border-radius: 5px;
+    margin-top: 12%;
+  }
+  .privacy-condition p {
+    font-size: 9px;
+  }
+  .already-account {
+    font-size: 8px;
+  }
+}
+@media (max-width: 350px) {
+  .signup-errors-message {
+    margin-bottom: -5.1%;
+    font-size: 9px;
+  }
+  .used-email-error-message {
+    margin-bottom: -5.1%;
+    font-size: 9px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 250px) {
+  .signup-content {
+    width: 200px;
+  }
+  .signup-content h3 {
+    font: 1.3rem italic;
+    margin-bottom: 5%;
+  }
+  .signup-innerinput-icon {
+    font-size: 10px;
+    margin-left: 125px;
+  }
+  .signup-errors-message {
+    margin-bottom: -5.8%;
+    font-size: 8px;
+    margin-left: 25px;
+  }
+  .used-email-error-message {
+    margin-bottom: -5.5%;
+    font-size: 8px;
+    margin-right: 23px;
+  }
+  .privacy-condition p {
+    font-size: 8px;
+  }
+  .already-account {
+    font-size: 7px;
+  }
+}
