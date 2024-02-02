@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/FireBase-LoginPage/static/css/main.07ffb507.css",
+    "main.js": "/FireBase-LoginPage/static/js/main.243fc006.js",
+    "static/js/592.926fffb4.chunk.js": "/FireBase-LoginPage/static/js/592.926fffb4.chunk.js",
+    "static/media/PC-Background.jpg": "/FireBase-LoginPage/static/media/PC-Background.f1120860b938c49af8e9.jpg",
+    "static/media/Veera Thanesh Resume.pdf": "/FireBase-LoginPage/static/media/Veera Thanesh Resume.96eae139442b2112d964.pdf",
+    "static/media/Bharathiyar.png": "/FireBase-LoginPage/static/media/Bharathiyar.d297841cc700b6c2b0cc.png",
+    "index.html": "/FireBase-LoginPage/index.html",
+    "main.07ffb507.css.map": "/FireBase-LoginPage/static/css/main.07ffb507.css.map",
+    "main.243fc006.js.map": "/FireBase-LoginPage/static/js/main.243fc006.js.map",
+    "592.926fffb4.chunk.js.map": "/FireBase-LoginPage/static/js/592.926fffb4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07ffb507.css",
+    "static/js/main.243fc006.js"
+  ]
+}
